@@ -1,0 +1,14 @@
+{
+	"name" : "Boardly",
+	"version" : "0.1.0",
+	"engine": "node 0.4.1",
+	"scripts" : {
+		"start" : "node server.js"
+	},
+	"dependencies" : {
+		"express": ">= 1.2.0",
+		"jade": ">= 0.20.0",
+		"stylus": ">= 0.23.0"
+	}
+
+}
