@@ -1,4 +1,12 @@
-application.get('/', function(req, res){
+var handler = exports.handler = {
 
-	res.render('single-page-app');
-});
+	getIndex : function(req, res){
+
+		res.render('single-page-app');
+	}
+};
+
+exports.configure = function(application){
+
+	application.get('/', handler.getIndex);	
+};
