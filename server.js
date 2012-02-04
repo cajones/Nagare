@@ -1,7 +1,7 @@
 var express = require('express'),
 	stylus = require('stylus'),
 	hosting = require('./lib/hosting.js'),
-	bootstrap = require('./lib/bootstrap.js');
+	bootstrap = require('./bootstrap.js');
 
 var application = express.createServer();
 
