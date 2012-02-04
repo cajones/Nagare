@@ -1,12 +1,12 @@
 body {
-  font: 16px "Lucida Grande", Arial, sans-serif;
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #c9b593;
 }
 #comingsoon {
-  margin: 75px;
+  margin: 75px 75px 5px 75px;
 }
 #comingsoon .title {
-  font: bold 35px "Lucida Grande", Arial, sans-serif;
+  font: bold 35px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #86a143;
 }
 .banner {
