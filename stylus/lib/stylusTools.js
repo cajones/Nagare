@@ -5,14 +5,14 @@ var path = require('path'),
 
 var Compiler = function() {
 	
-	this.compile = function(str, cssPath) {
+	this.compile = function(str, src, dest) {
 
 		var self = this;
-		stylus.render(str, { filename: cssPath }, function(err, css){
+		stylus.render(str, { filename: src }, function(err, css){
   			if (err) throw err;
-        	fs.writeFile(cssPath, css, function (err) {
+        	fs.writeFile(dest, css, function (err) {
         		if(err) throw err;
-        		self.emit('compiled', cssPath);		
+        		self.emit('compiled', dest);		
         	});
 		});
 	};

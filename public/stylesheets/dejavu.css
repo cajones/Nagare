@@ -39,20 +39,3 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  font: 18px Helvetica, Arial, sans-serif;
-  background-color: #c9b593;
-}
-#comingsoon {
-  margin: 22px 60px 11px 60px;
-}
-#comingsoon .title {
-  font: bold 35px Helvetica, Arial, sans-serif;
-  color: #476228;
-}
-.banner {
-  width: 100%;
-  padding: 7px 15px 7px 15px;
-  background-color: #336b70;
-  color: #e0d9ca;
-}

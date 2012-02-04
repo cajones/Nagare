@@ -1,7 +1,7 @@
 var path = require('path'),
-	file = require('./lib/file.js'),
+	file = require('./lib/file'),
 	_ = require('underscore'),
-	stylusTools = require('./lib/stylusTools.js');
+	stylusTools = require('./lib/stylusTools');
 
 var defaults = {
 	src : path.join(__dirname, '..',  'views', 'stylesheets'),
@@ -26,8 +26,8 @@ var Compiler = exports.Compiler = function(options) {
 			compiler.on('compiled', function(result) {
 				console.log(result + ' has been compiled.');
 			});
-			compiler.compile(data, target);
-		});
+			compiler.compile(data, filePath, target);
+		});	
 		loader.loadAll(options.src, options.pattern);
 	};
 };

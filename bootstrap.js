@@ -4,8 +4,7 @@ exports.configure = function (application) {
 		stylus = require('./stylus/compile'),
 		routes = require('./routes');
 
-	var compiler = new stylus.Compiler();
-	compiler.compile();
+	stylus.compile();
 
 	application.set('view engine', 'jade');
 	application.set('view options', {layout:false});
