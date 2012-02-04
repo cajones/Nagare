@@ -1,6 +1,6 @@
 var sinon = require('sinon');
 
-describe('Boardly - web application', function() {
+describe('Boardly - server application', function() {
 	
 	var handler = require('../routes/single-page-app.js').handler,
 		request = {},
