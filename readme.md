@@ -11,33 +11,62 @@ Important Things
 Features
 --------
 
-I can create a new board
+- I can create a new board
 
-I can create a workflow 
+- TODO: I can create a workflow 
 
-I can add a card to the board, it should go into the first stage of the workflow
+- TODO: I can add a card to the board, it should go into the first stage of the workflow
 
-I can add more more stages to the workflow
+- TODO: I can add more more stages to the workflow
 
-I can advance the card through the workflow
+- TODO: I can advance the card through the workflow
 
-I can add more cards
+- TODO: I can add more cards
 
-I can move all cards through the workflow
+- TODO: I can move all cards through the workflow
 
-I can see how long it took to move a card through the workflow
+- TODO: I can see how long it took to move a card through the workflow
 
-I can give a workflow stage a WIP limit
+- TODO: I can give a workflow stage a WIP limit
 
-I can see if a workflow stage has exceeded its WIP limit
+- TODO: I can see if a workflow stage has exceeded its WIP limit
+
  
 Running tests
 -------------
 
 	npm install mocha -g
 
-On windows: .\specs.ps1
+On windows: 
 
-On linux: mocha --ui bdd --require should --reporter spec
+	.\specs.ps1
+
+On linux: 
+
+	for f in ls ./specs/*.spec.js
+	do
+		mocha --ui bdd --require should --reporter spec $f
+	done
 
 
+Building Client API
+-------------------
+To compile the client app package, ensure that .\client\package.json is up-to-date. The run the ender build.
+
+On windows:
+
+	.\build.ps1
+
+On linux:
+
+	ender build .\client --output ./public/scripts/ender.js
+	ender info --use ./public/scripts/ender.js
+
+
+Deployment
+----------
+
+Add psycho-mantis.no.de to ~/.ssh/config
+	
+	git remote add psycho-mantis.no.de psycho-mantis.no.de:repo
+	git push psycho-mantis.no.de master
