@@ -1,9 +1,14 @@
-describe('Domain - A kanban board', function(){
+describe('Domain Model', function() {
 	
 	var boardly = require('../client/app');
-	var board = new boardly.Models.Board();
 
-	it('should have a name', function(){
-		board.name.should.exist;
-	})
-});
+	describe('Given a new kanban board', function(){
+	
+		var board = new boardly.Models.Board();
+
+		it('should have the name "New Board"', function(){
+			
+			board.name.should.equal('New Board');
+		})
+	});
+}); 

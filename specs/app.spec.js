@@ -1,9 +1,14 @@
-describe('Boardly - client application', function(){
+describe('Client application', function(){
 
 	var boardly = require('../client/app');
-	var app = new boardly.App();
-		
-	it('should have an empty board', function(){
-		app.board.should.exist;
+
+	describe('Given a new app', function() {
+	
+		var app = new boardly.App();
+			
+		it('should have a board', function(){
+
+			app.board.should.exist;
+		});	
 	});
-})
+});

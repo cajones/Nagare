@@ -25,6 +25,8 @@ Features
 
 - TODO: I can move all cards through the workflow
 
+- TODO: I can get back to my board
+
 - TODO: I can see how long it took to move a card through the workflow
 
 - TODO: I can give a workflow stage a WIP limit
