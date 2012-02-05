@@ -8,15 +8,38 @@ var library =
     	name : 'New Board'
     });
 
+
     var Views = container.Views = {};
-    Views.BoardView = function() {
-    	
-    };
+    Views.BoardView = Backbone.View.extend({
+        initialize : function() {
+            
+            this.board  = this.options.board;
+        },
+
+        render : function() {
+
+            var markup = $('<div>'+ this.board.name + '</div>');
+            $(this.el).html(markup);
+        }
+    });
+
 
     container.App = function() {
-    
-    	this.board = new Models.Board(); 	
+        
+        this.board = new Models.Board();
+        this.views = {
+            boardView : new Views.BoardView({
+                board : this.board
+            })
+        };
+
+        this.start = function() {
+        
+            this.views.boardView.render();
+            $('#boardContainer').html(this.views.boardView.el);   
+        };
     };
+
     return container;
 });
 

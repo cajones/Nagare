@@ -9,6 +9,11 @@ describe('Client application', function(){
 		it('should have a board', function(){
 
 			app.board.should.exist;
-		});	
+		});
+		
+		describe('when started', function(){
+			
+			it('should render the board');
+		});
 	});
 });
