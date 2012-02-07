@@ -16,7 +16,7 @@
 		"jsdom": "*",
 		"mocha": "*",
 		"sinon": "*",
-		"should": "*"
+		"chai": "*"
 	}
 
 }

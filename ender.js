@@ -1,7 +1,7 @@
 /*!
   * =============================================================
   * Ender: open module JavaScript framework (https://ender.no.de)
-  * Build: ender build .\client --output .\public\scripts\ender
+  * Build: ender build .\client --use .\public\scripts\ender
   * =============================================================
   */
 
@@ -11487,8 +11487,12 @@
 
   var module = { exports: {} }, exports = module.exports;
 
+  var root = this;
+  
+  var Backbone = require('backbone');
+  
   var library = 
-  (function(container, $, Backbone) {
+  (function(container) {
       
       var Models = container.Models = {};
       Models.Board = Backbone.Model.extend({
@@ -11535,14 +11539,10 @@
       return container;
   });
   
-  var root = this;
-  
   if (typeof exports === 'undefined') {
       root.Boardly = root.Boardly || {};
   }
-  library(root.Boardly || exports, 
-          require('jQuery'),
-          require('backbone'));
+  library(root.Boardly || exports);
   
 
   provide("boardly-client-app", module.exports);
