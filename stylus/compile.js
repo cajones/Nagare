@@ -34,7 +34,7 @@ var Compiler = exports.Compiler = function(options) {
 
 var compileNow = exports.compile = function(options) {
 	var compiler = new Compiler(options);
-	compiler.compile();		
+	compiler.compile();
 };
 
 exports.middleware = function(options) {

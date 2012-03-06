@@ -5,6 +5,8 @@ var express = require('express'),
 
 var application = express.createServer();
 
+console.log('booting..');
 bootstrap.configure(application);
 
 application.listen(hosting.port);
+console.log('web site running on port ' + hosting.port);

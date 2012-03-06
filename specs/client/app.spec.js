@@ -1,10 +1,10 @@
 describe('Client application', function(){
 
-	var boardly = require('boardly-client-app');
+	var Nagare = require('nagare-client-app');
 
 	describe('Given a new app', function() {
 
-		var app = new boardly.App();
+		var app = new Nagare.App();
 		it('should have a board', function(){
 			
 			expect(app.board).to.exist();

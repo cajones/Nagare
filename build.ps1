@@ -2,7 +2,7 @@
 cd client
 npm version patch
 cd ..
-npm uninstall boardly-client-app
+npm uninstall nagare-client-app
 npm install .\client
 
 $enderScriptPaths = ".\public\scripts\ender.js", ".\public\scripts\ender.min.js" 

@@ -49,8 +49,8 @@ var library =
 var root = this;
 
 if (typeof exports === 'undefined') {
-    root.Boardly = root.Boardly || {};
+    root.Nagare = root.Nagare || {};
 }
-library(root.Boardly || exports, 
+library(root.Nagare || exports, 
         require('jQuery'),
         require('backbone'));

@@ -1,10 +1,10 @@
 describe('Domain Model', function() {
 	
-	var boardly = require('boardly-client-app');
+	var Nagare = require('nagare-client-app');
 
 	describe('Given a new kanban board', function(){
 	
-		var board = new boardly.Models.Board();
+		var board = new Nagare.Models.Board();
 
 		it('should have the name "New Board"', function(){
 			

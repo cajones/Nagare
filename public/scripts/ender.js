@@ -11538,14 +11538,14 @@
   var root = this;
   
   if (typeof exports === 'undefined') {
-      root.Boardly = root.Boardly || {};
+      root.Nagare = root.Nagare || {};
   }
-  library(root.Boardly || exports, 
+  library(root.Nagare || exports, 
           require('jQuery'),
           require('backbone'));
   
 
-  provide("boardly-client-app", module.exports);
+  provide("nagare-client-app", module.exports);
 
   $.ender(module.exports);
 
