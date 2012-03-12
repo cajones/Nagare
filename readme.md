@@ -1,4 +1,4 @@
-Boardly - The open source kanban
+Nagare - The open source kanban
 ================================
 
 Important Things
